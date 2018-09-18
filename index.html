@@ -50,7 +50,6 @@
                                 </li>
                               </ul>
                         </span>
-<!--                        <span><a href="#/elearning">eLearning</a></span>-->
                         <span><a href="#/contact">Contact</a></span>
                    
 				</div>
@@ -65,9 +64,9 @@
 			<div class="row overlay menu-heading">
                 <p><a ng-click="showOverlay=false" href="#/">Home</a></p>
                 <p><a ng-click="showOverlay=false" href="#/about">About Us</a></p>
-                <p><a href="#/overview?page=overview_bls" ng-click="solutions = !solutions">Bespoke Learning Solutions <i ng-show="!solutions" class="fa fa-angle-down"></i> <i ng-show="solutions" class="fa fa-angle-up"></i></a> </p>
+                <p><a href="#/overview?page=overview_bls" ng-click="solutions = !solutions"> <i ng-show="!solutions" class="fa fa-angle-down"></i> <i ng-show="solutions" class="fa fa-angle-up"></i></a> </p>
                 <div class="sub-menu" ng-show="solutions">
-                   <p class="heading"><a ng-click="showOverlay=false" href="#/overview?page=overview_bls">About Bespoke Learning Solutions</a></p> 
+                    <p class="heading"><a ng-click="showOverlay=false" href="#/overview?page=overview_bls">About</a></p> 
                    <p ng-repeat="item in menu.bls" ng-click="$parent.showOverlay=false"><a ng-href="{{item.url}}" >{{item.title}}</a></p>
                 </div>
                 <p><a href="#/overview?page=overview_sector" ng-click="sector = !sector">Sector <i ng-show="!sector" class="fa fa-angle-down"></i> <i ng-show="sector" class="fa fa-angle-up"></i></a> </p>
@@ -75,9 +74,9 @@
                    <p class="heading"><a ng-click="showOverlay=false" href="#/overview?page=overview_sector">About Sectors</a></p> 
                    <p ng-repeat="item in menu.bls" ng-click="$parent.showOverlay=false"><a ng-href="{{item.url}}" ng-click="showOverlay=false">{{item.title}}</a></p>
                 </div>
-                <p><a ng-click="showOverlay=false" href="#/elearning">eLearning</a></p>
+                <p><a ng-click="showOverlay=false" href="#/"></a></p>
                 <p><a ng-click="showOverlay=false" href="#/contact">Contact</a></p>
-                <div class="col-xs-12 social-media-icons"><a target="_blank" href="https://twitter.com/intuition_com"><i class="fa fa-twitter"></i></a><a href="https://www.linkedin.com/company/205452/"><i class="fa fa-linkedin"></i></a></div>
+                <div class="col-xs-12 social-media-icons"><a target="_blank" href=""><i class="fa fa-twitter"></i></a><a href=""><i class="fa fa-linkedin"></i></a></div>
             </div>
         </div>
         </div>
@@ -116,7 +115,7 @@
 		<div class="container">
 			<div class="row row-splash-footer">
 				<div class="col-sm-5 splash-footer-content footer-content-social-media">
-					<div class="social-media-icons hidden-xs"><a target="_blank" href="https://twitter.com/intuition_com"><i class="fa fa-twitter"></i></a><a href="https://www.linkedin.com/company/205452/"><i class="fa fa-linkedin"></i></a></div>
+					<div class="social-media-icons hidden-xs"><a target="_blank" href=""><i class="fa fa-twitter"></i></a><a href="https://www.linkedin.com/company/205452/"><i class="fa fa-linkedin"></i></a></div>
 				</div>
                 <div class="col-sm-7 splash-footer-content pull-right copyright">© Copyright 2018 by Creepy Trees Inc.</div>
 			</div>

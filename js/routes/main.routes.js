@@ -30,36 +30,3 @@ app.config(function($routeProvider) {
 
     })
 });
-
-/*app.config(function($routeProvider) {
-  $routeProvider
-    .when("/", {
-        templateUrl : 'pages/home.html',
-    })
-    .when("/section1", {
-        templateUrl : "pages/section1.html",
-    })
-    .when("/section2", {
-      templateUrl : "pages/bls.html",
-
-    })
-    .when("/section3", {
-      templateUrl : "pages/elearning.html",
-    })
-    .when("/section4", {
-      templateUrl : "pages/overview.html",
-
-    })
-    .when("/about", {
-      templateUrl : "pages/about.html",
-
-    })
-    .when("/section5", {
-      templateUrl : "pages/elearning.html",
-
-    })
-    .when("/contact", {
-      templateUrl : "pages/contact.html",
-
-    })
-});*/
