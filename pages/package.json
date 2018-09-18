@@ -1,0 +1,15 @@
+{
+  "name": "sample-site",
+  "version": "1.0.0",
+  "description": "Responsive site built with angularjs and bootstrap",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Ben Hardy",
+  "license": "ISC",
+  "dependencies": {
+    "angular": "^1.6.9",
+    "bootstrap": "^4.0.0"
+  }
+}

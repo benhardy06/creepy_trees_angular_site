@@ -1,0 +1,213 @@
+    
+      <div class="container-fluid splash-content">
+         <h4>SECTOR</h4>
+         <h1>{{info.title | uppercase}}</h1>
+      </div>
+      <div class="container bread-crumb">
+         <div class="row">
+            <div class="col-xs-12">
+               <p><a href="#/">Home</a>
+                  <a class="bread-lead" href><i class="fa fa-angle-right"></i><i class="fa fa-angle-right"></i></a>
+                   <a href="#/overview?page=overview_sector">Sector</a>
+                  <a class="bread-lead" href><i class="fa fa-angle-right"></i><i class="fa fa-angle-right"></i></a>
+                  <a class="active" href>{{info.title}}</a>
+               </p>
+            </div>
+         </div>
+      </div>
+       <div class="container-wrap">
+      <div class="container text-content">
+         <div class="row">
+            <div class="col-xs-12">
+               <h3>Heading</h3>
+               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            </div>
+         </div>
+      </div>
+       </div>
+      <div ng-controller="clickAndDisplay" class="container-wrap-grey">
+         <div class="container text-content">
+            <div class="row">
+               <div class="col-xs-12">
+                  <h3>Heading</h3>
+                   
+               </div>
+            </div>
+             <div class="row">
+                <div class="click-display">
+                    <div class="col-sm-3 col-xs-6" ng-click="current=0"><div class="click-heading" ng-class="{current:current==0}"><i class="fa fa-list"></i><p>Overview</p></div></div>
+                    <div class="col-sm-3 col-xs-6" ng-click="current=1"><div class="click-heading" ng-class="{current:current==1}"><i class="fa fa-bullseye"></i><p>Objectives</p></div></div>
+                    <div class="col-sm-3 col-xs-6"ng-click="current=2"><div class="click-heading" ng-class="{current:current==2}"><i class="fa fa-users"></i><p>Audience</p></div></div>
+                    <div class="col-sm-3 col-xs-6"ng-click="current=3"><div class="click-heading" ng-class="{current:current==3}"><i class="fa fa-mouse-pointer"></i><p>eLearning</p></div></div>
+                </div>
+            </div>
+             <div class="row">
+                <div class="display-content">
+                    <div class="col-xs-12" ng-show="current==0"><div class="display-txt current">
+                        <p>0 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Pretium quam vulputate dignissim suspendisse in. Feugiat vivamus at augue eget arcu dictum varius duis at. Ipsum a arcu cursus vitae congue mauris. Ultrices mi tempus imperdiet nulla malesuada pellentesque elit eget. Lectus magna fringilla urna porttitor rhoncus. Euismod in pellentesque massa placerat duis ultricies lacus sed turpis. Cras semper auctor neque vitae tempus quam pellentesque nec nam. Facilisi etiam dignissim diam quis enim lobortis scelerisque fermentum.</p>
+                        
+                        </div>
+                    </div>
+                    <div class="col-xs-12" ng-show="current==1"><div class="display-txt current">
+                        <p>1 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Pretium quam vulputate dignissim suspendisse in. Feugiat vivamus at augue eget arcu dictum varius duis at. Ipsum a arcu cursus vitae congue mauris. Ultrices mi tempus imperdiet nulla malesuada pellentesque elit eget. Lectus magna fringilla urna porttitor rhoncus. Euismod in pellentesque massa placerat duis ultricies lacus sed turpis. Cras semper auctor neque vitae tempus quam pellentesque nec nam. Facilisi etiam dignissim diam quis enim lobortis scelerisque fermentum.</p>
+                        
+                        </div>
+                    </div>
+                    <div class="col-xs-12" ng-show="current==2"><div class="display-txt current">
+                        <p>2 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Pretium quam vulputate dignissim suspendisse in. Feugiat vivamus at augue eget arcu dictum varius duis at. Ipsum a arcu cursus vitae congue mauris. Ultrices mi tempus imperdiet nulla malesuada pellentesque elit eget. Lectus magna fringilla urna porttitor rhoncus. Euismod in pellentesque massa placerat duis ultricies lacus sed turpis. Cras semper auctor neque vitae tempus quam pellentesque nec nam. Facilisi etiam dignissim diam quis enim lobortis scelerisque fermentum.</p>
+                        
+                        </div>
+                    </div>
+                    <div class="col-xs-12" ng-show="current==3"><div class="display-txt current">
+                        <p>3 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Pretium quam vulputate dignissim suspendisse in. Feugiat vivamus at augue eget arcu dictum varius duis at. Ipsum a arcu cursus vitae congue mauris. Ultrices mi tempus imperdiet nulla malesuada pellentesque elit eget. Lectus magna fringilla urna porttitor rhoncus. Euismod in pellentesque massa placerat duis ultricies lacus sed turpis. Cras semper auctor neque vitae tempus quam pellentesque nec nam. Facilisi etiam dignissim diam quis enim lobortis scelerisque fermentum.</p>
+                        
+                        </div>
+                    </div>
+                </div>
+            </div>
+      </div>
+       </div>
+       <div class="container-wrap-grey course-tiles" style="display:none">
+         <div class="container course-tiles text-content">
+            <div class="row">
+               <div class="col-xs-12">
+                  <h3>Heading</h3>
+               </div>
+            </div>
+             <div class="row">
+               <div class="col-xs-12">
+                  <div class="course-tile">
+                    <div class="overlay"></div>
+                    <h3>High-Pressure Psychology</h3>
+                      <img src="images/bicycle.jpg"/>
+                      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                      <p class="topics"><strong>Topics Include:</strong> dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                   </div>
+                   <div class="course-tile">
+                    <div class="overlay"></div>
+                    <h3>High-Pressure Psychology</h3>
+                      <img src="images/bicycle.jpg"/>
+                      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                      <p class="topics"><strong>Topics Include:</strong> dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                   </div>
+                   <div class="course-tile">
+                    <div class="overlay"></div>
+                    <h3>High-Pressure Psychology</h3>
+                      <img src="images/bicycle.jpg"/>
+                      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                      <p class="topics"><strong>Topics Include:</strong> dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                   </div>
+               </div>
+            </div>
+         </div>
+      </div>
+       
+       
+       <div class="container-wrap" style="display:none">
+       <div class="container quote text-content visible-xs">
+         <div class="row">
+            <div class="col-xs-12">
+            </div>
+         </div>
+         <div class="row">
+            <div  class=" col-xs-6">
+               <div class="image"></div>
+            </div>
+            <div class=" col-xs-6 description">
+               <p><i>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation"</i></p>
+                <p><strong>- Credit</strong></p>
+            </div>
+         </div>
+      </div>
+       </div>
+       
+       
+       
+       
+       
+       <div class="container-wrap">
+      <div class="container bio text-content">
+         <div class="row">
+            <div class="col-xs-12">
+               <h3>Bio</h3>
+            </div>
+         </div>
+         <div class="row">
+            <div  class=" col-sm-2 col-xs-12">
+               <img src="images/bicycle.jpg"/>
+            </div>
+            <div class=" col-sm-10 col-xs-12 description">
+               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            </div>
+         </div>
+      </div>
+       </div>
+      <div class="container-wrap-grey course-titles">
+         <div ng-controller="carouselController" class="container text-content">
+            <div class="row">
+               <div class="col-xs-12">
+                  <h3>Course Tiltes</h3>
+                   <p style="display:none">Over the last year, we have monitored the trends and successes of business and professional skills programmes and have seen an unprecedented need for personal effectiveness and performance training. From this, we have condensed the most in-demand workshops of the financial industry into five clear areas of development: Peak Performance, People Performance, Communication, Effectiveness and Management & Leadership.</p>
+               </div>
+            </div>
+            <div class="row">
+               <div class="col-sm-4 col-xs-12">
+                  <h5>Heading</h5>
+                   <ul>
+                    <li><p>hello</p></li>
+                    <li><p>hello</p></li>
+                    <li><p>hello</p></li>
+                    <li><p>hello</p></li>
+                    <li><p>hello</p></li>
+                    
+                   </ul>
+                   <h5>Heading</h5>
+                   <ul>
+                    <li><p>hello</p></li>
+                    <li><p>hello</p></li>
+                    <li><p>hello</p></li>
+                    <li><p>hello</p></li>
+                    <li><p>hello</p></li>
+                   </ul>
+               </div>
+               <div class="col-sm-4 col-xs-12">
+                  <h5>Heading</h5>
+                   <ul>
+                    <li><p>hello</p></li>
+                    <li><p>hello</p></li>
+                    <li><p>hello</p></li>
+                    <li><p>hello</p></li>
+                    <li><p>hello</p></li>
+                   </ul>
+                   <h5>Heading</h5>
+                   <ul>
+                    <li><p>hello</p></li>
+                    <li><p>hello</p></li>
+                    <li><p>hello</p></li>
+                    <li><p>hello</p></li>
+                    <li><p>hello</p></li>
+                   </ul>
+               </div>
+               <div class="col-sm-4 col-xs-12">
+                  <h5>Heading</h5>
+                   <ul>
+                    <li><p>hello</p></li>
+                    <li><p>hello</p></li>
+                    <li><p>hello</p></li>
+                    <li><p>hello</p></li>
+                    <li><p>hello</p></li>
+                   </ul>
+                   <h5>Heading</h5>
+                   <ul>
+                    <li><p>hello</p></li>
+                    <li><p>hello</p></li>
+                    <li><p>hello</p></li>
+                    <li><p>hello</p></li>
+                    <li><p>hello</p></li>
+                   </ul>
+               </div>
+            </div>
+         </div>
+      </div>
+      <div class="footer-buffer grey"></div>
+     </div>

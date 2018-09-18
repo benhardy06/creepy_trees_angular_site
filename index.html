@@ -1,0 +1,149 @@
+<!doctype html>
+<html ng-app="app">
+<head>
+<title>Sample Site</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="js/shared/angular.min.js"></script>
+<script src="js/shared/angular-animate.js"></script>
+<script src="js/shared/angular-route.js"></script>
+<script src="js/shared/ui-bootstrap-tpls-2.2.0.min.js"></script>
+<link rel="stylesheet" href="node_modules/bootstrap/css/bootstrap.min.css">
+<link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="css/index_sample.css">
+</head>
+
+<body off-top>
+    <div ng-controller="menuController">
+    <div class="container-wrap-heading">
+		<div class="container-fluid container-splash-header">
+			<div class="row row-splash-heading">
+				<div class="col-md-3 col-sm-2 col-xs-5 splash-header-icon">
+                   <a href="#/"><img src="images/trees_logo_black.png"/></a> 
+                </div>
+				<div class="splash-header-icon txt col-md-3 col-sm-8 col-xs-4">
+                    <p>@CreepyTreesInc</p>
+                </div>
+                <div class="col-sm-2 col-xs-3 splash-header-icon visible-sm visible-xs">
+                    <div ng-click="showOverlay = !showOverlay" class="icon pull-right"><i class="fa fa-bars" aria-hidden="true"></i></div>
+                </div>
+				<div   class="col-sm-6  splash-header-menu hidden-sm hidden-xs">
+                   
+                        <span><a href="#/about">About</a></span>
+                        <span uib-dropdown on-toggle="toggled(open)">
+                            <a href uib-dropdown-toggle>Comics <i class="fa fa-angle-down"></i> <i class="fa fa-angle-up"></i></a>
+                            <ul class="dropdown-menu" uib-dropdown-menu aria-labelledby="simple-dropdown">
+                                <li>
+                                    
+                                    <p class="dropdown-heading"><a href="#/section3?page=overview_1">Podcasts</a></p>
+                                    <a ng-repeat="item in menu.bls" ng-href="{{item.url}}">- {{item.title}}</a>
+<!--                                  <a href>Hello</a>-->
+                                </li>
+                              </ul>
+                        </span>
+                        <span uib-dropdown on-toggle="toggled(open)">
+                            <a href uib-dropdown-toggle>Podcasts <i class="fa fa-angle-down"></i><i class="fa fa-angle-up"></i></a>
+                            <ul class="dropdown-menu" uib-dropdown-menu aria-labelledby="simple-dropdown">
+                                <li>
+                                  <p class="dropdown-heading"><a href="#/section3?page=overview_2">Drawings</a></p>
+                                  <a ng-repeat="item in menu.sector" ng-href="{{item.url}}">- {{item.title}}</a>
+                                </li>
+                              </ul>
+                        </span>
+<!--                        <span><a href="#/elearning">eLearning</a></span>-->
+                        <span><a href="#/contact">Contact</a></span>
+                   
+				</div>
+                
+			</div>
+		</div>
+		<div  class="nav-shadow"  ng-class="{border:runBorder}"></div>
+	</div>
+        
+    <div class="container menu-overlay visible-sm visible-xs" ng-show="showOverlay">
+            <div ng-click="showOverlay = !showOverlay" class="wrap-overlay-close"><i class="fa fa-times pull-right"></i></div>
+			<div class="row overlay menu-heading">
+                <p><a ng-click="showOverlay=false" href="#/">Home</a></p>
+                <p><a ng-click="showOverlay=false" href="#/about">About Us</a></p>
+                <p><a href="#/overview?page=overview_bls" ng-click="solutions = !solutions">Bespoke Learning Solutions <i ng-show="!solutions" class="fa fa-angle-down"></i> <i ng-show="solutions" class="fa fa-angle-up"></i></a> </p>
+                <div class="sub-menu" ng-show="solutions">
+                   <p class="heading"><a ng-click="showOverlay=false" href="#/overview?page=overview_bls">About Bespoke Learning Solutions</a></p> 
+                   <p ng-repeat="item in menu.bls" ng-click="$parent.showOverlay=false"><a ng-href="{{item.url}}" >{{item.title}}</a></p>
+                </div>
+                <p><a href="#/overview?page=overview_sector" ng-click="sector = !sector">Sector <i ng-show="!sector" class="fa fa-angle-down"></i> <i ng-show="sector" class="fa fa-angle-up"></i></a> </p>
+                <div class="sub-menu" ng-show="sector">
+                   <p class="heading"><a ng-click="showOverlay=false" href="#/overview?page=overview_sector">About Sectors</a></p> 
+                   <p ng-repeat="item in menu.bls" ng-click="$parent.showOverlay=false"><a ng-href="{{item.url}}" ng-click="showOverlay=false">{{item.title}}</a></p>
+                </div>
+                <p><a ng-click="showOverlay=false" href="#/elearning">eLearning</a></p>
+                <p><a ng-click="showOverlay=false" href="#/contact">Contact</a></p>
+                <div class="col-xs-12 social-media-icons"><a target="_blank" href="https://twitter.com/intuition_com"><i class="fa fa-twitter"></i></a><a href="https://www.linkedin.com/company/205452/"><i class="fa fa-linkedin"></i></a></div>
+            </div>
+        </div>
+        </div>
+	
+        <div id="main" ng-controller="MainController">
+          <!-- angular templating -->
+          <!-- this is where content will be injected -->
+          <div ng-view autoscroll="true"></div>
+            <div class="container-wrap" ng-show="path=='/contact'">
+        <div class="container text-content">
+             <div class="row">
+                 <div class="col-xs-12">
+                     <div class="contact-form" >
+                    <!--[if lte IE 8]>
+                      <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/v2-legacy.js"></script>
+                      <![endif]-->
+                      <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/v2.js"></script>
+                    <script>
+                        console.log('here')
+                      hbspt.forms.create({
+                        portalId: '4269130',
+                        formId: '3d3ab8c7-ef71-4f91-a723-42ba4e5a1e44',
+                        css:''
+
+                      });
+                    
+                    </script> 
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+      </div>
+    
+    <div class="container-wrap-splash-footer hidden-xs">
+		<div class="container">
+			<div class="row row-splash-footer">
+				<div class="col-sm-5 splash-footer-content footer-content-social-media">
+					<div class="social-media-icons hidden-xs"><a target="_blank" href="https://twitter.com/intuition_com"><i class="fa fa-twitter"></i></a><a href="https://www.linkedin.com/company/205452/"><i class="fa fa-linkedin"></i></a></div>
+				</div>
+                <div class="col-sm-7 splash-footer-content pull-right copyright">© Copyright 2018 by Creepy Trees Inc.</div>
+			</div>
+		</div>
+	</div>
+    <div class="container-wrap-splash-footer visible-xs">
+		<div class="container">
+			<div class="row row-splash-footer">
+                <div class="col-xs-12 splash-footer-content copyright">© Copyright 2018 by Creepy Trees Inc.</div>
+			</div>
+		</div>
+	</div>
+<!--Modules -->
+ <script src="js/app.js"></script> 
+<!--Controllers -->
+ <script src="js/controllers/menu.controller.js"></script>
+    <script src="js/controllers/main.controller.js"></script>  
+  <script src="js/controllers/carousel.controller.js"></script>
+  <script src="js/controllers/click-and-display.controller.js"></script>
+<!--Directives-->
+   <script src="js/directives/top.directive.js"></script> 
+<!--Services-->
+ <script src="js/services/main.service.js"></script> 
+ <script src="js/services/menu.service.js"></script> 
+<!--Routes-->
+ <script src="js/routes/main.routes.js"></script> 
+
+              
+</body>
+</html>
